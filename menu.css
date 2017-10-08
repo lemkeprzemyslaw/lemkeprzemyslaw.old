@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("img/luca-zanon-26595.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.wrapper>div {
+    margin: 20px auto;
+}
+
+.flex {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.logo {
+    flex: 100%;
+    margin: 35px;
+    font-size: 50px;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 100%;
+}
+
+.menu-item {
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu {
+    background-color: #1C77C3;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-xl {
+    max-width: 1140px;
+}
+
+.menu-item>a:link, .menu-item>a:visited {
+    background-color: #1C77C3;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.menu-item>a:hover, .menu-item>a:active {
+    background-color: white;
+    color: #1C77C3;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #1C77C3;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.25em;
+    color: white;
+}
+
+footer span, footer i {
+    font-family: "Open Sans";
+    color: white;
+    margin: 0 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex: 100%;
+    color: white;
+}
+
+.copyright {
+    flex: 100%;
+    text-align: center;
+}
+
+.footer-item {
+    margin: 15px 0;
+}
