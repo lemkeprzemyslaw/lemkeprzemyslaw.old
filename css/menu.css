@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../img/luca-zanon-26595.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+.wrapper>div {
+    margin: 50px auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 25px 15px;
+    font-size: 50px;
+    color: white;
+}
+
+.menu {
+    background-color: #1C77C3;
+    justify-content: center;
+}
+
+.col-xl {
+    width: 1140px;
+}
+
+.nav-item>a:link, .nav-item>a:visited {
+    background-color: #1C77C3;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-item>a:active, .nav-item>a:active {
+    background-color: white;
+    color: #1C77C3;
+}
+
+#expirience, #education, #skills {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+}
+
+footer {
+    background-color: #1C77C3;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.25em;
+    color: white;
+}
+
+footer>span, footer>i {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    margin: 0 15px;
+}
+
+a, a:link, a:visited, a:visited, a:any-link  {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.footer-item {
+    margin: 10px 15px 0 15px;
+}
+
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #1C77C3;
+}
+
+.nav-conainer {
+    margin: 0 auto;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    flex-wrap: wrap;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: #1C77C3;
+    border: 2px white solid;
+}
+
+.button:hover {
+    font-family: "Open Sans", sans-serif;
+    color: #1C77C3;
+    background-color: white;
+    border: 2px white solid;
+}
+
+textarea, input {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 0;
+    border: 2px white solid;
+    font-size: 0.8em;
+}
+
+.mail, .message {
+    width: 90%;
+    resize: none;
+}
+
+.message {
+    height: 50px;
+}
+
+.contact {
+    border: 2px white solid;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    display: inline;
+    margin-left: 5px;
+}
+
+ul, li, img, .skill-container, .contact-header, .mail, .message, textarea, input, .button {
+    margin: 10px;
+}
+
+.skill-container {
+    justify-content: space-between;
+}
