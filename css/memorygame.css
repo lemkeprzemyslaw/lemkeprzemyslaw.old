@@ -10,7 +10,6 @@ body {
     opacity: 0.2;
     cursor: pointer;
     margin: 15px;
-
 }
 
 #endGame {
@@ -96,4 +95,10 @@ body {
     border: 1px white solid;
     font-size: 1em;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .chooseContainer {
+        width: 260px;
+    }
 }

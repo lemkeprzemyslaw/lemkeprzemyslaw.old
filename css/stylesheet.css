@@ -7,12 +7,17 @@ body {
     background-image: url("../img/luca-zanon-26595.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
     color: white;
 }
 
-.wrapper>div {
-    margin: 50px auto;
+.skill-container {
+    justify-content: space-between;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .flex {
@@ -20,19 +25,19 @@ body {
     flex-wrap: wrap;
 }
 
+.wrapper>div {
+    margin: 50px auto;
+}
+
 .logo {
     padding: 25px 15px;
-    font-size: 50px;
+    font-size: 3em;
     color: white;
 }
 
 .menu {
     background-color: #1C77C3;
     justify-content: center;
-}
-
-.col-xl {
-    width: 1140px;
 }
 
 .nav-item>a:link, .nav-item>a:visited {
@@ -54,14 +59,6 @@ body {
     padding: 25px;
 }
 
-footer {
-    background-color: #1C77C3;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 1.25em;
-    color: white;
-}
-
 footer>span, footer>i {
     font-family: "Open Sans", sans-serif;
     color: white;
@@ -73,37 +70,23 @@ a, a:link, a:visited, a:visited, a:any-link  {
     color: white;
 }
 
-.links {
-    display: flex;
-    justify-content: space-around;
-    color: white;
-}
-
 .copyright {
     text-align: center;
 }
 
 .footer-item {
-    margin: 10px 15px 0 15px;
+    margin: 10px 15px;
 }
 
 .nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    display: flex;
     background-color: #1C77C3;
 }
 
 .nav-conainer {
     margin: 0 auto;
-}
-
-.vertical-flex {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    flex-wrap: wrap;
 }
 
 .center {
@@ -147,7 +130,11 @@ textarea, input {
     margin: 10px;
     text-align: center;
     align-items: center;
-    display: flex;
+}
+
+.links {
+    justify-content: space-around;
+    color: white;
 }
 
 h2 {
@@ -159,6 +146,84 @@ ul, li, img, .skill-container, .contact-header, .mail, .message, textarea, input
     margin: 10px;
 }
 
-.skill-container {
-    justify-content: space-between;
+.links, .contact {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #1C77C3;
+    justify-content: center;
+    font-size: 1.25em;
+    color: white;
+}
+
+.footer-wrapper {
+    justify-content: center;
+}
+
+@media screen and (max-width: 575px) {
+    .col-xl {
+        width: auto;
+    }
+    .thumbnail{
+        width: 100%;
+        justify-content: center;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .col-xl {
+        width: 540px;
+    }
+    .thumbnail{
+        width: 33%;
+        justify-content: center;
+    }
+    .skill-container {
+        justify-content: center;
+    }
+    .logo {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .col-xl {
+        width: 720px;
+    }
+    .thumbnail{
+        width: 33%;
+        justify-content: center;
+    }
+    .skill-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .col-xl {
+        width: 960px;
+    }
+    .thumbnail{
+        width: 25%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .col-xl {
+        width: 1140px;
+    }
+    .footer-wrapper {
+        justify-content: space-around;
+    }
+    .links {
+        order: -1;
+    }
+    .contact {
+        order: 0;
+    }
 }

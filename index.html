@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Przemysław Lemke - portfolio</title>
     <link rel="shortcut icon" href="img/character.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/resetcss.css">
-    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/memorygame.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/jquery.min.js"></script>
     <script defer src="js/fontawesome-all.js"></script>
 </head>
 <body>
-<div class="flex menu">
+<div class="flex menu" id="menu">
     <div class="flex col-xl logo">
         <h4>Przemysław Lemke - portfolio</h4>
     </div>
@@ -79,14 +79,14 @@
     <div id="skills" class="col-xl">
         <i class="fas fa-code fa-lg" data-fa-transform="up-3"></i><h2>Umiejętności:</h2>
         <div class="flex skill-container">
-            <img src="img/html.png" alt="html" height="100" width="100">
-            <img src="img/css.png" alt="css" height="100" width="100">
-            <img src="img/js.png" alt="javascript" height="100" width="100">
-            <img src="img/jquery.png" alt="jquery" height="100" width="100">
-            <img src="img/react.png" alt="react" height="100" width="100">
-            <img src="img/git.png" alt="git" height="100" width="100">
-            <img src="img/jira.png" alt="jira" height="100" width="100">
-            <img src="img/bootstrap.png" alt="bootstrap" height="100" width="100">
+            <figure class="thumbnail flex"><img src="img/html.png" alt="html" height="100" width="100"></figure>
+            <figure class="thumbnail flex"><img src="img/css.png" alt="css" height="100" width="100"></figure>
+            <figure class="thumbnail flex"><img src="img/js.png" alt="javascript" height="100" width="100"></figure>
+            <figure class="thumbnail flex"><img src="img/jquery.png" alt="jquery" height="100" width="100"></figure>
+            <figure class="thumbnail flex"><img src="img/react.png" alt="react" height="100" width="100"></figure>
+            <figure class="thumbnail flex"><img src="img/git.png" alt="git" height="100" width="100"></figure>
+            <figure class="thumbnail flex"><img src="img/jira.png" alt="jira" height="100" width="100"></figure>
+            <figure class="thumbnail flex"><img src="img/bootstrap.png" alt="bootstrap" height="100" width="100"></figure>
         </div>
     </div>
 
@@ -124,8 +124,18 @@
         </div>
     </div>
 </div>
+<div class="flex"></div>
 <footer class="flex">
-    <div class="col-xl flex center">
+    <div class="col-xl flex footer-wrapper">
+        <div class="vertical-flex contact wrap" id="contact">
+            <h3 class="contact-header">Formularz kontaktowy</h3>
+            <form  action="https://formspree.io/lemkeprzemyslaw@gmail.com"
+                  method="POST">
+                <input class="mail" type="text" placeholder="Twój email"  name="_replyto">
+                <textarea class="message" type="email" placeholder="Treść wiadomości" name="name"></textarea>
+                <input class="button" type="submit" value="Wyślij">
+            </form>
+        </div>
         <div class="vertical-flex links">
             <div class="linkedin footer-item">
                 <a class="site" target="_blank" href="https://pl.linkedin.com/in/przemys%C5%82aw-lemke-0b9b4a5b">
@@ -139,15 +149,6 @@
                 <a class="site" target="_blank" href="http://dreamers.jfdz6.is-academy.pl/">
                     <i class="fas fa-users fa-lg"></i><span> Projekt grupwy w infoShare Academy</span></a>
             </div>
-        </div>
-        <div class="contact vertical-flex" id="contact">
-            <h3 class="contact-header">Formularz kontaktowy</h3>
-            <form  action="https://formspree.io/lemkeprzemyslaw@gmail.com"
-                  method="POST">
-                <input class="mail" type="text" placeholder="Twój email"  name="_replyto">
-                <textarea class="message" type="email" placeholder="Treść wiadomości" name="name"></textarea>
-                <input class="button" type="submit" value="Wyślij">
-            </form>
         </div>
         <div class="copyright footer-item col-xl">
             <i class="fa fa-copyright"></i><span> Przemysław Lemke 2017</span>
