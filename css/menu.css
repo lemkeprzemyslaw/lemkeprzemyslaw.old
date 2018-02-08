@@ -1,0 +1,140 @@
+/**
+* Demo Stuff
+*/
+
+body {
+    height: 100000px;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #1BBC9B;
+    font-weight:400;
+    font-size:2em;
+    margin:1em 0;
+}
+
+/**
+* Navigation Defaults
+*/
+
+.nav {
+    position: fixed;
+    z-index:100;
+    opacity:0;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.nav--active .nav {
+    opacity:0.5;
+    background-color: #333;
+}
+
+.nav__list {
+    margin:0;
+    padding:10px;
+}
+
+.nav__item {
+    list-style-type: none;
+    text-align: left;
+}
+
+.nav__link {
+    font-size:1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity:1;
+    transition: opacity 300ms ease-in-out;
+}
+
+/* Default navigation icon */
+.nav__trigger {
+    display:block;
+    position:fixed;
+    width:30px;
+    height:25px;
+    right:10px;
+    top:10px;
+    z-index:200;
+}
+
+.nav--active .nav__trigger {
+    opacity:1;
+}
+
+.nav__icon {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #000000;
+    transition-property: background-color, transform;
+    transition-duration: 300ms;
+}
+
+.nav__icon:before,
+.nav__icon:after {
+     content:'';
+     display:block;
+     width:30px;
+     height:5px;
+     position: absolute;
+     background: #000000;
+     transition-property: margin, transform;
+     transition-duration: 300ms;
+ }
+
+.nav__icon:before {
+     margin-top:-10px;
+ }
+
+.nav__icon:after {
+     margin-top:10px;
+ }
+
+/* Don't nest if you don't have to. */
+
+/**
+* Style #1
+*/
+
+.nav {
+    transform: translateX(-100%);
+    width:100%;
+    height:100%;
+}
+
+.nav__link {
+    opacity:0;
+    transition-delay:500ms;
+}
+
+.nav--active .nav__link {
+    opacity:1;
+}
+
+.nav--active .nav {
+    transition: all 300ms ease-in-out;
+    transform: translateX(0);
+}
+
+.nav--active .nav__icon {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.nav--active .nav__icon:before {
+     margin-top:0;
+     transform:rotate(45deg);
+ }
+
+.nav--active .nav__icon:after {
+     margin-top:0;
+     transform:rotate(-45deg);
+ }
+

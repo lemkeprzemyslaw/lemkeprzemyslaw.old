@@ -7,154 +7,175 @@
     <link rel="shortcut icon" href="img/character.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/resetcss.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/memorygame.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/jquery.min.js"></script>
     <script defer src="js/fontawesome-all.js"></script>
 </head>
 <body>
-<div class="flex menu" id="menu">
-    <div class="flex col-xl logo">
-        <h4>Przemysław Lemke - portfolio</h4>
-    </div>
-</div>
-<div class="nav">
-    <div class="flex col-xl nav-conainer">
-        <div class="nav-item"><a href="#expirience"><h5>Doświadczenie</h5></a></div>
-        <div class="nav-item"><a href="#education"><h5>Wykształcenie</h5></a></div>
-        <div class="nav-item"><a href="#skills"><h5>Umiejętności</h5></a></div>
-        <div class="nav-item"><a href="#gameContainer"><h5>Gra w JS</h5></a></div>
-        <div class="nav-item"><a href="#contact"><h5>Kontakt</h5></a></div>
-    </div>
+<div class="menu">
+<a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
+    </ul>
+</nav>
 </div>
 <div class="wrapper">
-    <div id="expirience" class="col-xl">
-        <i class="fas fa-briefcase fa-lg" data-fa-transform="up-3"></i><h2>Doświadczenie:</h2>
-        <ul>
-            <li><strong>Compliance Specialist</strong>
-                <ul>
-                    <li>styczeń 2015 - do teraz</li>
-                    <li>- kontakt z organami ścigania oraz państwowymi organami
-                        kontrolnymi
-                    </li>
-                    <li>- realizacja obowiązków związanych z przeciwdziałaniem praniu
-                        brudnych pieniędzy i finansowania terroryzmu
-                    </li>
-                </ul>
-            </li>
-            <br>
-            <li><strong>Contact Center Specialist</strong>
-                <ul>
-                    <li>luty 2013 - styczeń 2015</li>
-                    <li>- kontakt reklamacyjny z klientami Spółki</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div id="education" class="col-xl">
-        <i class="fas fa-graduation-cap fa-lg" data-fa-transform="up-3"></i><h2>Wykształcenie:</h2>
-        <ul>
-            <li><strong>infoShare Academy</strong>
-                <ul>
-                    <li>lipiec 2017 – styczeń 2018</li>
-                    <li>szkolenie Junior Front-end Developer</li>
-                </ul>
-            </li>
-            <br>
-            <li><strong>Uniwersytet Gdański</strong>
-                <ul>
-                    <li>październik 2010 – czerwiec 2012</li>
-                    <li>Wydział Ekonomiczny, studia magisterskie</li>
-                </ul>
-            </li>
-            <br>
-            <li><strong>Uniwersytet Gdański</strong>
-                <ul>
-                    <li>październik 2007 – czerwiec 2010</li>
-                    <li>Wydział Ekonomiczny, studia licencjackie</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div id="skills" class="col-xl">
-        <i class="fas fa-code fa-lg" data-fa-transform="up-3"></i><h2>Umiejętności:</h2>
-        <div class="flex skill-container">
-            <figure class="thumbnail flex"><img src="img/html.png" alt="html" height="100" width="100"></figure>
-            <figure class="thumbnail flex"><img src="img/css.png" alt="css" height="100" width="100"></figure>
-            <figure class="thumbnail flex"><img src="img/js.png" alt="javascript" height="100" width="100"></figure>
-            <figure class="thumbnail flex"><img src="img/jquery.png" alt="jquery" height="100" width="100"></figure>
-            <figure class="thumbnail flex"><img src="img/react.png" alt="react" height="100" width="100"></figure>
-            <figure class="thumbnail flex"><img src="img/git.png" alt="git" height="100" width="100"></figure>
-            <figure class="thumbnail flex"><img src="img/jira.png" alt="jira" height="100" width="100"></figure>
-            <figure class="thumbnail flex"><img src="img/bootstrap.png" alt="bootstrap" height="100" width="100"></figure>
-        </div>
-    </div>
-
-    <div id="gameContainer" class="col-xl">
-        <div id="infoContainer" class="hidden">
-            <h3>- Po rozpoczęciu gry komputer podświetli pola <br>
-                - Twoim zadaniem jest powtórzenie ruchu komputera <br>
-                - Ruchy możecz wykonywać klikając lub używając przycisków Z, X, N oraz M <br>
-                - Sprawdź swoją pamięć
-            </h3>
-        </div>
-        <div id="infoContainer" class="hidden">
-            <h3>- Po rozpoczęciu gry komputer podświetli pola <br>
-                - Twoim zadaniem jest powtórzenie ruchu komputera <br>
-                - Ruchy możecz wykonywać klikając lub używając przycisków Z, X, N oraz M <br>
-                - Sprawdź swoją pamięć
-            </h3>
-        </div>
-        <h3 id="infoGame"><i class="fa fa-info"></i></h3>
-        <div><h2 id=text></h2></div>
-        <div class="chooseContainer">
-            <h3 id=level></h3>
-            <h3 id=time></h3>
-        </div>
-        <div class="chooseContainer">
-            <div class="choose flex" id="div1"></div>
-            <div class="choose flex" id="div2"></div>
-            <div class="choose flex" id="div3"></div>
-            <div class="choose flex" id="div4"></div>
-        </div>
-        <div>
-            <button class="play">Rozpocznij grę</button>
-            <button class="nextRound hidden">Następna runda</button>
-            <button class="repaly">Od nowa</button>
-        </div>
-    </div>
+    <div class="main-container"></div>
 </div>
-<div class="flex"></div>
-<footer class="flex">
-    <div class="col-xl flex footer-wrapper">
-        <div class="vertical-flex contact wrap" id="contact">
-            <h3 class="contact-header">Formularz kontaktowy</h3>
-            <form  action="https://formspree.io/lemkeprzemyslaw@gmail.com"
-                  method="POST">
-                <input class="mail" type="text" placeholder="Twój email"  name="_replyto">
-                <textarea class="message" type="email" placeholder="Treść wiadomości" name="name"></textarea>
-                <input class="button" type="submit" value="Wyślij">
-            </form>
-        </div>
-        <div class="vertical-flex links">
-            <div class="linkedin footer-item">
-                <a class="site" target="_blank" href="https://pl.linkedin.com/in/przemys%C5%82aw-lemke-0b9b4a5b">
-                    <i class="fab fa-linkedin fa-lg"></i><span> Mój profil na Linkedin</span></a>
-            </div>
-            <div class="linkedin footer-item">
-                <a class="site" target="_blank" href="https://pl.linkedin.com/in/przemys%C5%82aw-lemke-0b9b4a5b">
-                    <i class="fab fa-github fa-lg"></i><span> Mój profil na Github</span></a>
-            </div>
-            <div class="dreamers footer-item">
-                <a class="site" target="_blank" href="http://dreamers.jfdz6.is-academy.pl/">
-                    <i class="fas fa-users fa-lg"></i><span> Projekt grupwy w infoShare Academy</span></a>
-            </div>
-        </div>
-        <div class="copyright footer-item col-xl">
-            <i class="fa fa-copyright"></i><span> Przemysław Lemke 2017</span>
-        </div>
-    </div>
-</footer>
-<script src="js/memorygame.js"></script>
+
+
+
+<!--<div class="flex menu" id="menu">-->
+    <!--<div class="flex col-xl logo">-->
+        <!--<h4>Przemysław Lemke - portfolio</h4>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="nav">-->
+    <!--<div class="flex col-xl nav-conainer">-->
+        <!--<div class="nav-item"><a href="#expirience"><h5>Doświadczenie</h5></a></div>-->
+        <!--<div class="nav-item"><a href="#education"><h5>Wykształcenie</h5></a></div>-->
+        <!--<div class="nav-item"><a href="#skills"><h5>Umiejętności</h5></a></div>-->
+        <!--<div class="nav-item"><a href="#gameContainer"><h5>Gra w JS</h5></a></div>-->
+        <!--<div class="nav-item"><a href="#contact"><h5>Kontakt</h5></a></div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="wrapper">-->
+    <!--<div id="expirience" class="col-xl">-->
+        <!--<i class="fas fa-briefcase fa-lg" data-fa-transform="up-3"></i><h2>Doświadczenie:</h2>-->
+        <!--<ul>-->
+            <!--<li><strong>Compliance Specialist</strong>-->
+                <!--<ul>-->
+                    <!--<li>styczeń 2015 - do teraz</li>-->
+                    <!--<li>- kontakt z organami ścigania oraz państwowymi organami-->
+                        <!--kontrolnymi-->
+                    <!--</li>-->
+                    <!--<li>- realizacja obowiązków związanych z przeciwdziałaniem praniu-->
+                        <!--brudnych pieniędzy i finansowania terroryzmu-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<br>-->
+            <!--<li><strong>Contact Center Specialist</strong>-->
+                <!--<ul>-->
+                    <!--<li>luty 2013 - styczeń 2015</li>-->
+                    <!--<li>- kontakt reklamacyjny z klientami Spółki</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div id="education" class="col-xl">-->
+        <!--<i class="fas fa-graduation-cap fa-lg" data-fa-transform="up-3"></i><h2>Wykształcenie:</h2>-->
+        <!--<ul>-->
+            <!--<li><strong>infoShare Academy</strong>-->
+                <!--<ul>-->
+                    <!--<li>lipiec 2017 – styczeń 2018</li>-->
+                    <!--<li>szkolenie Junior Front-end Developer</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<br>-->
+            <!--<li><strong>Uniwersytet Gdański</strong>-->
+                <!--<ul>-->
+                    <!--<li>październik 2010 – czerwiec 2012</li>-->
+                    <!--<li>Wydział Ekonomiczny, studia magisterskie</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<br>-->
+            <!--<li><strong>Uniwersytet Gdański</strong>-->
+                <!--<ul>-->
+                    <!--<li>październik 2007 – czerwiec 2010</li>-->
+                    <!--<li>Wydział Ekonomiczny, studia licencjackie</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div id="skills" class="col-xl">-->
+        <!--<i class="fas fa-code fa-lg" data-fa-transform="up-3"></i><h2>Umiejętności:</h2>-->
+        <!--<div class="flex skill-container">-->
+            <!--<figure class="thumbnail flex"><img src="img/html.png" alt="html" height="100" width="100"></figure>-->
+            <!--<figure class="thumbnail flex"><img src="img/css.png" alt="css" height="100" width="100"></figure>-->
+            <!--<figure class="thumbnail flex"><img src="img/js.png" alt="javascript" height="100" width="100"></figure>-->
+            <!--<figure class="thumbnail flex"><img src="img/jquery.png" alt="jquery" height="100" width="100"></figure>-->
+            <!--<figure class="thumbnail flex"><img src="img/react.png" alt="react" height="100" width="100"></figure>-->
+            <!--<figure class="thumbnail flex"><img src="img/git.png" alt="git" height="100" width="100"></figure>-->
+            <!--<figure class="thumbnail flex"><img src="img/jira.png" alt="jira" height="100" width="100"></figure>-->
+            <!--<figure class="thumbnail flex"><img src="img/bootstrap.png" alt="bootstrap" height="100" width="100"></figure>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div id="gameContainer" class="col-xl">-->
+        <!--<div id="infoContainer" class="hidden">-->
+            <!--<h3>- Po rozpoczęciu gry komputer podświetli pola <br>-->
+                <!-- - Twoim zadaniem jest powtórzenie ruchu komputera <br>-->
+                <!-- - Ruchy możecz wykonywać klikając lub używając przycisków Z, X, N oraz M <br>-->
+                <!-- - Sprawdź swoją pamięć-->
+            <!--</h3>-->
+        <!--</div>-->
+        <!--<div id="infoContainer" class="hidden">-->
+            <!--<h3>- Po rozpoczęciu gry komputer podświetli pola <br>-->
+                <!-- - Twoim zadaniem jest powtórzenie ruchu komputera <br>-->
+                <!-- - Ruchy możecz wykonywać klikając lub używając przycisków Z, X, N oraz M <br>-->
+                <!-- - Sprawdź swoją pamięć-->
+            <!--</h3>-->
+        <!--</div>-->
+        <!--<h3 id="infoGame"><i class="fa fa-info"></i></h3>-->
+        <!--<div><h2 id=text></h2></div>-->
+        <!--<div class="chooseContainer">-->
+            <!--<h3 id=level></h3>-->
+            <!--<h3 id=time></h3>-->
+        <!--</div>-->
+        <!--<div class="chooseContainer">-->
+            <!--<div class="choose flex" id="div1"></div>-->
+            <!--<div class="choose flex" id="div2"></div>-->
+            <!--<div class="choose flex" id="div3"></div>-->
+            <!--<div class="choose flex" id="div4"></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<button class="play">Rozpocznij grę</button>-->
+            <!--<button class="nextRound hidden">Następna runda</button>-->
+            <!--<button class="repaly">Od nowa</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="flex"></div>-->
+<!--<footer class="flex">-->
+    <!--<div class="col-xl flex footer-wrapper">-->
+        <!--<div class="vertical-flex contact wrap" id="contact">-->
+            <!--<h3 class="contact-header">Formularz kontaktowy</h3>-->
+            <!--<form  action="https://formspree.io/lemkeprzemyslaw@gmail.com"-->
+                  <!--method="POST">-->
+                <!--<input class="mail" type="text" placeholder="Twój email"  name="_replyto">-->
+                <!--<textarea class="message" type="email" placeholder="Treść wiadomości" name="name"></textarea>-->
+                <!--<input class="button" type="submit" value="Wyślij">-->
+            <!--</form>-->
+        <!--</div>-->
+        <!--<div class="vertical-flex links">-->
+            <!--<div class="linkedin footer-item">-->
+                <!--<a class="site" target="_blank" href="https://pl.linkedin.com/in/przemys%C5%82aw-lemke-0b9b4a5b">-->
+                    <!--<i class="fab fa-linkedin fa-lg"></i><span> Mój profil na Linkedin</span></a>-->
+            <!--</div>-->
+            <!--<div class="linkedin footer-item">-->
+                <!--<a class="site" target="_blank" href="https://pl.linkedin.com/in/przemys%C5%82aw-lemke-0b9b4a5b">-->
+                    <!--<i class="fab fa-github fa-lg"></i><span> Mój profil na Github</span></a>-->
+            <!--</div>-->
+            <!--<div class="dreamers footer-item">-->
+                <!--<a class="site" target="_blank" href="http://dreamers.jfdz6.is-academy.pl/">-->
+                    <!--<i class="fas fa-users fa-lg"></i><span> Projekt grupwy w infoShare Academy</span></a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="copyright footer-item col-xl">-->
+            <!--<i class="fa fa-copyright"></i><span> Przemysław Lemke 2017</span>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+<!--<script src="js/memorygame.js"></script>-->
+<script src="js/menu.js"></script>
+
 </body>
 </html>

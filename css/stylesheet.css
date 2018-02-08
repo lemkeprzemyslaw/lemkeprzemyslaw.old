@@ -4,226 +4,233 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url("../img/luca-zanon-26595.jpg");
+    color: white;
+}
+
+.wrapper {
+    background-image: url("../img/f-7.jpg"), linear-gradient(to right, #ffffff, #ABAEB3);
     background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+    background-size: 100vh auto;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
-.skill-container {
-    justify-content: space-between;
-}
 
-.vertical-flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
+/*.skill-container {*/
+    /*justify-content: space-between;*/
+/*}*/
 
-.wrapper>div {
-    margin: 50px auto;
-}
+/*.vertical-flex {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+/*}*/
 
-.logo {
-    padding: 25px 15px;
-    font-size: 3em;
-    color: white;
-}
+/*.flex {*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+/*}*/
 
-.menu {
-    background-color: #1C77C3;
-    justify-content: center;
-}
+/*.wrapper>div {*/
+    /*!*margin: 50px auto;*!*/
+/*}*/
 
-.nav-item>a:link, .nav-item>a:visited {
-    background-color: #1C77C3;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
+/*.logo {*/
+    /*padding: 25px 15px;*/
+    /*font-size: 3em;*/
+    /*color: white;*/
+/*}*/
 
-.nav-item>a:active, .nav-item>a:active {
-    background-color: white;
-    color: #1C77C3;
-}
+/*.menu {*/
+    /*background-color: #1C77C3;*/
+    /*justify-content: center;*/
+/*}*/
 
-#expirience, #education, #skills {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 25px;
-}
+/*.nav-item>a:link, .nav-item>a:visited {*/
+    /*background-color: #1C77C3;*/
+    /*color: white;*/
+    /*padding: 14px 25px;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+/*}*/
 
-footer>span, footer>i {
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    margin: 0 15px;
-}
+/*.nav-item>a:active, .nav-item>a:active {*/
+    /*background-color: white;*/
+    /*color: #1C77C3;*/
+/*}*/
 
-a, a:link, a:visited, a:visited, a:any-link  {
-    text-decoration: none;
-    color: white;
-}
+/*#expirience, #education, #skills {*/
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    /*padding: 25px;*/
+/*}*/
 
-.copyright {
-    text-align: center;
-}
+/*footer>span, footer>i {*/
+    /*font-family: "Open Sans", sans-serif;*/
+    /*color: white;*/
+    /*margin: 0 15px;*/
+/*}*/
 
-.footer-item {
-    margin: 10px 15px;
-}
+/*a, a:link, a:visited, a:visited, a:any-link  {*/
+    /*text-decoration: none;*/
+    /*color: white;*/
+/*}*/
 
-.nav {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #1C77C3;
-}
+/*.copyright {*/
+    /*text-align: center;*/
+/*}*/
 
-.nav-conainer {
-    margin: 0 auto;
-}
+/*.footer-item {*/
+    /*margin: 10px 15px;*/
+/*}*/
 
-.center {
-    align-items: center;
-    justify-content: center;
-}
+/*.nav {*/
+    /*position: -webkit-sticky;*/
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*background-color: #1C77C3;*/
+/*}*/
 
-.button {
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    background-color: #1C77C3;
-    border: 2px white solid;
-}
+/*.nav-conainer {*/
+    /*margin: 0 auto;*/
+/*}*/
 
-.button:hover {
-    font-family: "Open Sans", sans-serif;
-    color: #1C77C3;
-    background-color: white;
-    border: 2px white solid;
-}
+/*.center {*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+/*}*/
 
-textarea, input {
-    font-family: "Open Sans", sans-serif;
-    border-radius: 0;
-    border: 2px white solid;
-    font-size: 0.8em;
-}
+/*.button {*/
+    /*font-family: "Open Sans", sans-serif;*/
+    /*color: white;*/
+    /*background-color: #1C77C3;*/
+    /*border: 2px white solid;*/
+/*}*/
 
-.mail, .message {
-    width: 90%;
-    resize: none;
-}
+/*.button:hover {*/
+    /*font-family: "Open Sans", sans-serif;*/
+    /*color: #1C77C3;*/
+    /*background-color: white;*/
+    /*border: 2px white solid;*/
+/*}*/
 
-.message {
-    height: 50px;
-}
+/*textarea, input {*/
+    /*font-family: "Open Sans", sans-serif;*/
+    /*border-radius: 0;*/
+    /*border: 2px white solid;*/
+    /*font-size: 0.8em;*/
+/*}*/
 
-.contact {
-    border: 2px white solid;
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
-    align-items: center;
-}
+/*.mail, .message {*/
+    /*width: 90%;*/
+    /*resize: none;*/
+/*}*/
 
-.links {
-    justify-content: space-around;
-    color: white;
-}
+/*.message {*/
+    /*height: 50px;*/
+/*}*/
 
-h2 {
-    display: inline;
-    margin-left: 5px;
-}
+/*.contact {*/
+    /*border: 2px white solid;*/
+    /*padding: 5px;*/
+    /*margin: 10px;*/
+    /*text-align: center;*/
+    /*align-items: center;*/
+/*}*/
 
-ul, li, img, .skill-container, .contact-header, .mail, .message, textarea, input, .button {
-    margin: 10px;
-}
+/*.links {*/
+    /*justify-content: space-around;*/
+    /*color: white;*/
+/*}*/
 
-.links, .contact {
-    margin: 10px 0;
-}
+/*h2 {*/
+    /*display: inline;*/
+    /*margin-left: 5px;*/
+/*}*/
 
-footer {
-    background-color: #1C77C3;
-    justify-content: center;
-    font-size: 1.25em;
-    color: white;
-}
+/*ul, li, img, .skill-container, .contact-header, .mail, .message, textarea, input, .button {*/
+    /*margin: 10px;*/
+/*}*/
 
-.footer-wrapper {
-    justify-content: center;
-}
+/*.links, .contact {*/
+    /*margin: 10px 0;*/
+/*}*/
 
-@media screen and (max-width: 575px) {
-    .col-xl {
-        width: auto;
-    }
-    .thumbnail{
-        width: 100%;
-        justify-content: center;
-    }
-    .logo {
-        font-size: 1.5em;
-    }
-}
+/*footer {*/
+    /*background-color: #1C77C3;*/
+    /*justify-content: center;*/
+    /*font-size: 1.25em;*/
+    /*color: white;*/
+/*}*/
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-    .col-xl {
-        width: 540px;
-    }
-    .thumbnail{
-        width: 33%;
-        justify-content: center;
-    }
-    .skill-container {
-        justify-content: center;
-    }
-    .logo {
-        font-size: 2em;
-    }
-}
+/*.footer-wrapper {*/
+    /*justify-content: center;*/
+/*}*/
 
-@media screen and (min-width: 769px) and (max-width: 991px) {
-    .col-xl {
-        width: 720px;
-    }
-    .thumbnail{
-        width: 33%;
-        justify-content: center;
-    }
-    .skill-container {
-        justify-content: center;
-    }
-}
+/*@media screen and (max-width: 575px) {*/
+    /*.col-xl {*/
+        /*width: auto;*/
+    /*}*/
+    /*.thumbnail{*/
+        /*width: 50%;*/
+        /*justify-content: center;*/
+    /*}*/
+    /*.logo {*/
+        /*font-size: 1.5em;*/
+    /*}*/
+/*}*/
 
-@media screen and (min-width: 992px) and (max-width:1200px) {
-    .col-xl {
-        width: 960px;
-    }
-    .thumbnail{
-        width: 25%;
-        justify-content: center;
-    }
-}
+/*@media screen and (min-width: 576px) and (max-width: 768px) {*/
+    /*.col-xl {*/
+        /*width: 540px;*/
+    /*}*/
+    /*.thumbnail{*/
+        /*width: 33%;*/
+        /*justify-content: center;*/
+    /*}*/
+    /*.skill-container {*/
+        /*justify-content: center;*/
+    /*}*/
+    /*.logo {*/
+        /*font-size: 2em;*/
+    /*}*/
+/*}*/
 
-@media screen and (min-width: 1201px) {
-    .col-xl {
-        width: 1140px;
-    }
-    .footer-wrapper {
-        justify-content: space-around;
-    }
-    .links {
-        order: -1;
-    }
-    .contact {
-        order: 0;
-    }
-}
+/*@media screen and (min-width: 769px) and (max-width: 991px) {*/
+    /*.col-xl {*/
+        /*width: 720px;*/
+    /*}*/
+    /*.thumbnail{*/
+        /*width: 33%;*/
+        /*justify-content: center;*/
+    /*}*/
+    /*.skill-container {*/
+        /*justify-content: center;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (min-width: 992px) and (max-width:1200px) {*/
+    /*.col-xl {*/
+        /*width: 960px;*/
+    /*}*/
+    /*.thumbnail{*/
+        /*width: 25%;*/
+        /*justify-content: center;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (min-width: 1201px) {*/
+    /*.col-xl {*/
+        /*width: 1140px;*/
+    /*}*/
+    /*.footer-wrapper {*/
+        /*justify-content: space-around;*/
+    /*}*/
+    /*.links {*/
+        /*order: -1;*/
+    /*}*/
+    /*.contact {*/
+        /*order: 0;*/
+    /*}*/
+/*}*/
