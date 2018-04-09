@@ -8,14 +8,48 @@ body {
 }
 
 .wrapper {
-    background-image: url("../img/f-7.jpg"), linear-gradient(to right, #ffffff, #ABAEB3);
+    background-image: url(/img/computer.jpg);
     background-repeat: no-repeat;
-    background-size: 100vh auto;
+    background-size: cover;
     height: 100vh;
     background-attachment: fixed;
 }
 
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.main-logo {
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1em;    
+    font-size: 2em;
+    ruby-align: center;
+}
+
+.main-logo > span {
+    color: blue;
+}
+
+.aboutme-container {
+    height: 300px;
+    color: #000000;
+    font-size: 4em;
+    text-align: center;
+    padding: 1em;
+    position: flex;
+}
+
+.aboutme-foto > img {
+    width: 400px;
+}
+
+.aboutme-description {
+    font-size: 1em;
+}
 
 /*.skill-container {*/
     /*justify-content: space-between;*/

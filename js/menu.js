@@ -1,4 +1,4 @@
-$('.nav__trigger').on('click', function(e){
+$('.nav_trigger').on('click', function(e){
     e.preventDefault();
-    $(this).parent().toggleClass('nav--active');
+    $(this).parent().toggleClass('nav-active');
 });

@@ -1,25 +1,6 @@
-/**
-* Demo Stuff
-*/
-
-body {
-    height: 100000px;
-}
-
 .container {
     text-align: center;
 }
-
-h1 {
-    color: #1BBC9B;
-    font-weight:400;
-    font-size:2em;
-    margin:1em 0;
-}
-
-/**
-* Navigation Defaults
-*/
 
 .nav {
     position: fixed;
@@ -29,23 +10,35 @@ h1 {
     transition-duration: 300ms;
 }
 
-.nav--active .nav {
-    opacity:0.5;
+.nav-active .nav {
+    opacity:0.8;
     background-color: #333;
 }
 
-.nav__list {
+.nav_list {
     margin:0;
-    padding:10px;
+    padding:0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
 }
 
-.nav__item {
+.nav_item {
     list-style-type: none;
     text-align: left;
+    padding: 2em;
+    width: 100%;
 }
 
-.nav__link {
-    font-size:1.3em;
+.nav_item:hover {
+    background: #000000;
+
+}
+
+.nav_link {
+    font-size:2em;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
@@ -53,8 +46,7 @@ h1 {
     transition: opacity 300ms ease-in-out;
 }
 
-/* Default navigation icon */
-.nav__trigger {
+.nav_trigger {
     display:block;
     position:fixed;
     width:30px;
@@ -64,45 +56,39 @@ h1 {
     z-index:200;
 }
 
-.nav--active .nav__trigger {
+.nav-active .nav_trigger {
     opacity:1;
 }
 
-.nav__icon {
+.nav_icon {
     display: inline-block;
     position: relative;
     width: 30px;
     height: 5px;
-    background-color: #000000;
+    background-color: #FFFFFF;
     transition-property: background-color, transform;
     transition-duration: 300ms;
 }
 
-.nav__icon:before,
-.nav__icon:after {
+.nav_icon:before,
+.nav_icon:after {
      content:'';
      display:block;
      width:30px;
      height:5px;
      position: absolute;
-     background: #000000;
+     background: #FFFFFF;
      transition-property: margin, transform;
      transition-duration: 300ms;
  }
 
-.nav__icon:before {
+.nav_icon:before {
      margin-top:-10px;
  }
 
-.nav__icon:after {
+.nav_icon:after {
      margin-top:10px;
  }
-
-/* Don't nest if you don't have to. */
-
-/**
-* Style #1
-*/
 
 .nav {
     transform: translateX(-100%);
@@ -110,30 +96,30 @@ h1 {
     height:100%;
 }
 
-.nav__link {
+.nav_link {
     opacity:0;
     transition-delay:500ms;
 }
 
-.nav--active .nav__link {
+.nav-active .nav_link {
     opacity:1;
 }
 
-.nav--active .nav {
+.nav-active .nav {
     transition: all 300ms ease-in-out;
     transform: translateX(0);
 }
 
-.nav--active .nav__icon {
+.nav-active .nav_icon {
     background: rgba(0, 0, 0, 0.0);
 }
 
-.nav--active .nav__icon:before {
+.nav-active .nav_icon:before {
      margin-top:0;
      transform:rotate(45deg);
  }
 
-.nav--active .nav__icon:after {
+.nav-active .nav_icon:after {
      margin-top:0;
      transform:rotate(-45deg);
  }
